@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:red;">
+  
+  <head>
+    <h3>align="center">*****************HEADER************</h3>
+    <%= link_to "addition", calculators_addition_path%>
+    <%= link_to "substraction", calculators_subtraction_path%>
+    <%= link_to "multiplication", calculators_multiplication_path%>
+    <%= link_to "divisoin", calculators_division_path%>
+  
+  
+    <title>School</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  
+    <%= yield %>
+  </body>
+ <h3>align="center">*****************FOOTER************</h3>
+</html>
